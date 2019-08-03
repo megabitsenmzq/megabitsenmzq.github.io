@@ -1,0 +1,30 @@
+language: go
+
+cache:
+  directories:
+    - $HOME/.cache/go-build
+    - $HOME/gopath/pkg/mod
+    - $HOME/gopath/src
+
+git:
+  depth: 1
+
+install: go get -v github.com/spf13/hugo
+
+script:
+  - hugo
+  
+before_cache:
+  - rm -rf !(public)
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  # token is set in travis-ci.org dashboard
+  github_token: $GITHUB_API_KEY
+  on: source
+  local_dir: public
+  repo: megabitsenmzq/megabitsenmzq.github.io
+  target_branch: master
+  email: deploy@travis-ci.org
+  name: deployment-bot
