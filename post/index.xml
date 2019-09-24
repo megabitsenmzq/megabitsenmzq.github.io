@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 🍤 金鱼的记忆仓库</title>
+    <link>https://megabits.xyz/post/</link>
+    <description>Recent content in Posts on 🍤 金鱼的记忆仓库</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 22 Aug 2019 02:04:51 +0900</lastBuildDate>
+    
+	<atom:link href="https://megabits.xyz/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>听音乐</title>
+      <link>https://megabits.xyz/post/listen-to-the-music/</link>
+      <pubDate>Thu, 22 Aug 2019 02:04:51 +0900</pubDate>
+      
+      <guid>https://megabits.xyz/post/listen-to-the-music/</guid>
+      <description>糊弄完成堆的作业，我终于躺在了床上。我抬头盯着发光的门玻璃，等父母刷牙洗脸胡乱折腾。等到走廊的灯终于关了，我才把手伸进床边的柜子，翻找我的耳</description>
+    </item>
+    
+    <item>
+      <title>夜</title>
+      <link>https://megabits.xyz/post/night/</link>
+      <pubDate>Thu, 01 Aug 2019 01:15:36 +0900</pubDate>
+      
+      <guid>https://megabits.xyz/post/night/</guid>
+      <description>零 夜深了，他走到自动贩卖机前，买了一罐咖啡，随便靠在旁边的墙上。手里捧着的咖啡还有些烫，他时不时转动一下罐子，眼神呆滞的看着街对面的灯。 还以</description>
+    </item>
+    
+    <item>
+      <title>我为什么又要开始写博客</title>
+      <link>https://megabits.xyz/post/first/</link>
+      <pubDate>Tue, 30 Jul 2019 19:22:42 +0900</pubDate>
+      
+      <guid>https://megabits.xyz/post/first/</guid>
+      <description>熟悉我的人都知道，我很早就开始在少数派写文章了。当时 Matrix 刚开，我在上面写一些 Mac 相关的教程，持续了数年。比起不写东西的人来说，我稍微有一丁点成绩</description>
+    </item>
+    
+  </channel>
+</rss>

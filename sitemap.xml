@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://megabits.xyz/post/</loc>
+    <lastmod>2019-08-22T02:04:51+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://megabits.xyz/post/listen-to-the-music/</loc>
+    <lastmod>2019-08-22T02:04:51+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://megabits.xyz/</loc>
+    <lastmod>2019-08-22T02:04:51+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://megabits.xyz/post/night/</loc>
+    <lastmod>2019-08-01T01:15:36+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://megabits.xyz/post/first/</loc>
+    <lastmod>2019-07-30T19:22:42+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://megabits.xyz/about/</loc>
+    <lastmod>2019-07-30T19:17:06+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://megabits.xyz/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://megabits.xyz/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
