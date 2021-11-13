@@ -1,10 +1,13 @@
 baseURL = 'https://megabits.xyz/'
 languageCode = 'zh-cn'
 title = '🍤 金鱼的记忆仓库'
+
 theme = "paper"
 enableInlineShortcodes = true
 
 [params]
+  author = "Megabits"
+  description = "你好，这些东西是一条鱼的记忆。假如他忘了什么的话，记得去提醒他。"
   twitter = 'Megabits_mzq'                # twitter.com/YOUR_TWITTER_ID
   github = 'megabitsenmzq'                  # github.com/YOUR_GITHUB_ID
   instagram = 'megabits_mzq'            # instagram.com/YOUR_INSTAGRAM_ID
