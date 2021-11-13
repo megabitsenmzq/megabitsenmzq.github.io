@@ -1,0 +1,20 @@
+baseURL = 'https://megabits.xyz/'
+languageCode = 'zh-cn'
+title = '🍤 金鱼的记忆仓库'
+theme = "paper"
+enableInlineShortcodes = true
+
+[params]
+  twitter = 'Megabits_mzq'                # twitter.com/YOUR_TWITTER_ID
+  github = 'megabitsenmzq'                  # github.com/YOUR_GITHUB_ID
+  instagram = 'megabits_mzq'            # instagram.com/YOUR_INSTAGRAM_ID
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "这么烂的东西谁写的"
+    url = "/about/"
+    weight = 10
+    
+[taxonomies]
+    tag = "tags"
