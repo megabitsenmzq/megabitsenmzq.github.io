@@ -19,8 +19,8 @@ draft: false
 他是一个 Apple 独立开发者，主要作品有：
 
 - [PomoNow 2](https://apps.apple.com/cn/story/id1586934917): 有仪式感的番茄钟。
-- [鱼鱼读屏](https://apps.apple.com/jp/app/fishscreenreader/id1527210860?mt=12): 给视障人群设计的 OCR 读屏工具。
-- [神奇分享](https://apps.apple.com/us/app/id1438149621): 活用二维码的小工具。
+- [鱼鱼读屏](https://apps.apple.com/cn/app/id1527210860): 给视障人群设计的 OCR 读屏工具。
+- [神奇分享](https://apps.apple.com/cn/app/id1438149621): 活用二维码的小工具。
 - ...
 
 你要是想看看他写的垃圾代码的话，可以去看他的 [Github](https://github.com/megabitsenmzq?tab=repositories)。想看他做的脑中风设计的话，可以去看他的 [Dribbble](https://dribbble.com/Megabits)。
