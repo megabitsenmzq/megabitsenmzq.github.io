@@ -18,6 +18,6 @@ enableInlineShortcodes = true
     name = "这么烂的东西谁写的"
     url = "/about/"
     weight = 10
-    
+
 [taxonomies]
     tag = "tags"
