@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>🍤 金鱼的记忆仓库</title><link>https://megabits.xyz/dev-posts/</link><description>Recent content on 🍤 金鱼的记忆仓库</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 14 Aug 2019 00:00:00 +0900</lastBuildDate><atom:link href="https://megabits.xyz/dev-posts/index.xml" rel="self" type="application/rss+xml"/><item><title>用树莓派（等）为 USB Midi 键盘增添连接方式</title><link>https://megabits.xyz/dev-posts/midi-pi/</link><pubDate>Wed, 14 Aug 2019 00:00:00 +0900</pubDate><guid>https://megabits.xyz/dev-posts/midi-pi/</guid><description>我在去年买了一个 M-Audio 的 Midi 键盘，用来连接电脑或者 iPad 弹琴。但是由于琴摆放的位置没有办法拉充电线，所以我能弹琴多久很大程度上取决于设备还有多少电。前一阵子从朋友手里白嫖了个橘子派，鉴于在练琴的时候其实并不需要多高的音质，我决定用这个设备给自己做一个钢琴的音源。
+我首先会介绍如何配置 USB Midi 设备发出声音，再介绍如何通过 Midi over BLE 广播 Midi 信号，最后介绍如何通过 Midi over Wifi 来广播 Midi 信号。
+系统配置 由于我使用的是橘子派而不是树莓派，我遇到了一些只有这边才会遇到的问题，其他开发板可以选择性掠过本节。
+橘子派能安装的最新版本 Armbian 内核关闭了 Midi 功能。在各种论坛研究一圈之后，发现旧版本的 Armbian 内核是开了的，于是我下载了使用旧版内核的系统。
+（注意使用旧版本系统仅限于本教程前半部分 USB Midi 设备，假如你需要配置蓝牙 Midi，则必须自己编译新内核。请自己 Google 如何编译 Armbian，在编译选项中开启：Device Drivers &amp;gt; Sound card support &amp;gt; Advanced Linux Sound Architecture &amp;gt; Sequencer Support )
+进去之后正常更新系统，旧版镜像要久一点。橘子派还需要在系统中启用声音，使用自带的配置工具 sudo armbian-config，启用 System &amp;gt; Hardware &amp;gt; Toggle hardware configuration &amp;gt; analog-codec 。
+由于橘子派会等待网络服务激活后才进入系统，导致开机时间非常长，使用下面的命令关闭它：
+sudo systemctl disable NetworkManager-wait-online 你还可以使用 systemd-analyze blame 命令查看服务的启动时间，关闭一些其他你不需要的服务。</description></item></channel></rss>
