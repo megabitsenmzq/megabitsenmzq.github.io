@@ -9,14 +9,14 @@ enableInlineShortcodes = true
   author = "Megabits"
   description = "你好，这些东西是一条鱼的记忆。假如他忘了什么的话，记得去提醒他。"
   twitter = 'Megabits_mzq'                # twitter.com/YOUR_TWITTER_ID
-#   github = 'megabitsenmzq'                  # github.com/YOUR_GITHUB_ID
+  github = 'megabitsenmzq'                  # github.com/YOUR_GITHUB_ID
   instagram = 'megabits_mzq'            # instagram.com/YOUR_INSTAGRAM_ID
 
 [menu]
   [[menu.main]]
-    identifier = "about"
-    name = "这么烂的东西谁写的"
-    url = "/about/"
+    identifier = "dev"
+    name = "技术文章"
+    url = "/dev-posts/"
     weight = 10
 
 [taxonomies]
