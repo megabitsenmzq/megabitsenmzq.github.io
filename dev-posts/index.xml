@@ -1,18 +1,41 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>🍤 金鱼的记忆仓库</title><link>https://blog.megabits.xyz/dev-posts/</link><description>Recent content on 🍤 金鱼的记忆仓库</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 10 Feb 2022 00:00:00 +0900</lastBuildDate><atom:link href="https://blog.megabits.xyz/dev-posts/index.xml" rel="self" type="application/rss+xml"/><item><title>搭建易于访问的私人 PeerTube 实例</title><link>https://blog.megabits.xyz/dev-posts/peertube/</link><pubDate>Thu, 10 Feb 2022 00:00:00 +0900</pubDate><guid>https://blog.megabits.xyz/dev-posts/peertube/</guid><description>本文旨在描述如何通过虚拟主机与对象存储，配置易于私人使用的 PeerTube 实例。教程并不适用供大规模访问的网站架设。
-虽然说只要 VPS 访问起来没有问题，不用对象存储也是没有问题的。但从经费的角度上，购买高带宽的对象存储总要比高带宽的 VPS 来的省钱。所以对于本文的目标读者，我还是建议使用对象存储。
-事前准备 一台 VPS（本文以 Ubuntu/Debian 为例） 对象存储服务（本文以 Backblaze B2 为例） 个人域名或子域名 习惯使用 Linux 的大脑 配置对象存储 首先你需要配置一个供 PeerTube 保存其影片的对象存储池。PeerTube 支持 Amazon S3，或 Backblaze B2，你用哪个都行。
-访问密钥 你需要从你选择的服务商建立一个访问用的 Key，并将：
-App Key ID App Key 记录下来以备稍后使用。
-存储池 之后建立一个给 PeerTube 使用的池，并将池设置为公开（Public），记录下：
-名字 终结点（Endpoint，即对象存储的主域名） 地区（只有 Amazon S3 需要） 配置 CORS CORS 其实就是防盗链。你肯定不希望什么网站都外链你的视频出去播放。在上一步已经设置为公开的基础上，点击 “CORS Rules” 按钮进行配置。
-选择：Share everything in this bucket with this one origin.
-并在其下方写下你将会使用的域名。需包含 https://，端口号可以没有。
-CORS 配置大概需要十分钟左右的时间来生效，正好可以来安装我们的网站。
-安装 PeerTube PeerTube 的安装是非常麻烦的，所以有很多人会选择使用 Docker 进行安装，但假如你对 Docker 并不熟悉，后续配置的时候可能会十分头疼。所以这里我们将直接进行安装。本文默认你在非 root 的 sudo user 下进行操作，其他情况请自行调整。</description></item><item><title>用树莓派（等）为 USB Midi 键盘增添连接方式</title><link>https://blog.megabits.xyz/dev-posts/midi-pi/</link><pubDate>Wed, 14 Aug 2019 00:00:00 +0900</pubDate><guid>https://blog.megabits.xyz/dev-posts/midi-pi/</guid><description>我在去年买了一个 M-Audio 的 Midi 键盘，用来连接电脑或者 iPad 弹琴。但是由于琴摆放的位置没有办法拉充电线，所以我能弹琴多久很大程度上取决于设备还有多少电。前一阵子从朋友手里白嫖了个橘子派，鉴于在练琴的时候其实并不需要多高的音质，我决定用这个设备给自己做一个钢琴的音源。
-我首先会介绍如何配置 USB Midi 设备发出声音，再介绍如何通过 Midi over BLE 广播 Midi 信号，最后介绍如何通过 Midi over Wifi 来广播 Midi 信号。
-系统配置 由于我使用的是橘子派而不是树莓派，我遇到了一些只有这边才会遇到的问题，其他开发板可以选择性掠过本节。
-橘子派能安装的最新版本 Armbian 内核关闭了 Midi 功能。在各种论坛研究一圈之后，发现旧版本的 Armbian 内核是开了的，于是我下载了使用旧版内核的系统。
-（注意使用旧版本系统仅限于本教程前半部分 USB Midi 设备，假如你需要配置蓝牙 Midi，则必须自己编译新内核。请自己 Google 如何编译 Armbian，在编译选项中开启：Device Drivers &amp;gt; Sound card support &amp;gt; Advanced Linux Sound Architecture &amp;gt; Sequencer Support )
-进去之后正常更新系统，旧版镜像要久一点。橘子派还需要在系统中启用声音，使用自带的配置工具 sudo armbian-config，启用 System &amp;gt; Hardware &amp;gt; Toggle hardware configuration &amp;gt; analog-codec 。
-由于橘子派会等待网络服务激活后才进入系统，导致开机时间非常长，使用下面的命令关闭它：
-sudo systemctl disable NetworkManager-wait-online 你还可以使用 systemd-analyze blame 命令查看服务的启动时间，关闭一些其他你不需要的服务。</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>🍤 金鱼的记忆仓库</title><link>https://blog.megabits.xyz/dev-posts/</link><description>Recent content on 🍤 金鱼的记忆仓库</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Thu, 10 Feb 2022 00:00:00 +0900</lastBuildDate><atom:link href="https://blog.megabits.xyz/dev-posts/index.xml" rel="self" type="application/rss+xml"/><item><title>搭建易于访问的私人 PeerTube 实例</title><link>https://blog.megabits.xyz/dev-posts/peertube/</link><pubDate>Thu, 10 Feb 2022 00:00:00 +0900</pubDate><guid>https://blog.megabits.xyz/dev-posts/peertube/</guid><description>&lt;p>本文旨在描述如何通过虚拟主机与对象存储，配置易于私人使用的 PeerTube 实例。教程并不适用供大规模访问的网站架设。&lt;/p>
+&lt;p>虽然说只要 VPS 访问起来没有问题，不用对象存储也是没有问题的。但从经费的角度上，购买高带宽的对象存储总要比高带宽的 VPS 来的省钱。所以对于本文的目标读者，我还是建议使用对象存储。&lt;/p>
+&lt;h2 id="事前准备">事前准备&lt;/h2>
+&lt;ol>
+&lt;li>一台 VPS（本文以 Ubuntu/Debian 为例）&lt;/li>
+&lt;li>对象存储服务（本文以 Backblaze B2 为例）&lt;/li>
+&lt;li>个人域名或子域名&lt;/li>
+&lt;li>习惯使用 Linux 的大脑&lt;/li>
+&lt;/ol>
+&lt;h2 id="配置对象存储">配置对象存储&lt;/h2>
+&lt;p>首先你需要配置一个供 PeerTube 保存其影片的对象存储池。PeerTube 支持 Amazon S3，或 Backblaze B2，你用哪个都行。&lt;/p>
+&lt;h3 id="访问密钥">访问密钥&lt;/h3>
+&lt;p>你需要从你选择的服务商建立一个访问用的 Key，并将：&lt;/p>
+&lt;ol>
+&lt;li>App Key ID&lt;/li>
+&lt;li>App Key&lt;/li>
+&lt;/ol>
+&lt;p>记录下来以备稍后使用。&lt;/p>
+&lt;h3 id="存储池">存储池&lt;/h3>
+&lt;p>之后建立一个给 PeerTube 使用的池，并将池设置为&lt;strong>公开（Public）&lt;/strong>，记录下：&lt;/p>
+&lt;ol>
+&lt;li>名字&lt;/li>
+&lt;li>终结点（Endpoint，即对象存储的主域名）&lt;/li>
+&lt;li>地区（只有 Amazon S3 需要）&lt;/li>
+&lt;/ol>
+&lt;h3 id="配置-cors">配置 CORS&lt;/h3>
+&lt;p>CORS 其实就是防盗链。你肯定不希望什么网站都外链你的视频出去播放。在上一步已经设置为公开的基础上，点击 &lt;strong>“CORS Rules”&lt;/strong> 按钮进行配置。&lt;/p>
+&lt;p>选择：Share everything in this bucket with this one origin.&lt;/p>
+&lt;p>并在其下方写下你将会使用的域名。需包含 https://，端口号可以没有。&lt;/p>
+&lt;p>CORS 配置大概需要十分钟左右的时间来生效，正好可以来安装我们的网站。&lt;/p>
+&lt;h2 id="安装-peertube">安装 PeerTube&lt;/h2>
+&lt;p>PeerTube 的安装是非常麻烦的，所以有很多人会选择使用 Docker 进行安装，但假如你对 Docker 并不熟悉，后续配置的时候可能会十分头疼。所以这里我们将直接进行安装。本文默认你在非 root 的 sudo user 下进行操作，其他情况请自行调整。&lt;/p></description></item><item><title>用树莓派（等）为 USB Midi 键盘增添连接方式</title><link>https://blog.megabits.xyz/dev-posts/midi-pi/</link><pubDate>Wed, 14 Aug 2019 00:00:00 +0900</pubDate><guid>https://blog.megabits.xyz/dev-posts/midi-pi/</guid><description>&lt;p>我在去年买了一个 M-Audio 的 Midi 键盘，用来连接电脑或者 iPad 弹琴。但是由于琴摆放的位置没有办法拉充电线，所以我能弹琴多久很大程度上取决于设备还有多少电。前一阵子从朋友手里白嫖了个橘子派，鉴于在练琴的时候其实并不需要多高的音质，我决定用这个设备给自己做一个钢琴的音源。&lt;/p>
+&lt;p>我首先会介绍如何配置 USB Midi 设备发出声音，再介绍如何通过 Midi over BLE 广播 Midi 信号，最后介绍如何通过 Midi over Wifi 来广播 Midi 信号。&lt;/p>
+&lt;h2 id="系统配置">系统配置&lt;/h2>
+&lt;p>由于我使用的是橘子派而不是树莓派，我遇到了一些只有这边才会遇到的问题，其他开发板可以选择性掠过本节。&lt;/p>
+&lt;p>橘子派能安装的最新版本 Armbian 内核关闭了 Midi 功能。在各种论坛研究一圈之后，发现旧版本的 Armbian 内核是开了的，于是我下载了使用旧版内核的系统。&lt;/p>
+&lt;p>（注意使用旧版本系统仅限于本教程前半部分 USB Midi 设备，假如你需要配置蓝牙 Midi，则必须自己编译新内核。请自己 Google 如何编译 Armbian，在编译选项中开启：Device Drivers &amp;gt; Sound card support &amp;gt; Advanced Linux Sound Architecture &amp;gt; Sequencer Support )&lt;/p>
+&lt;p>进去之后正常更新系统，旧版镜像要久一点。橘子派还需要在系统中启用声音，使用自带的配置工具 &lt;code>sudo armbian-config&lt;/code>，启用 System &amp;gt; Hardware &amp;gt; Toggle hardware configuration &amp;gt; analog-codec 。&lt;/p>
+&lt;p>由于橘子派会等待网络服务激活后才进入系统，导致开机时间非常长，使用下面的命令关闭它：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>sudo systemctl disable NetworkManager-wait-online
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>你还可以使用 &lt;code>systemd-analyze blame&lt;/code> 命令查看服务的启动时间，关闭一些其他你不需要的服务。&lt;/p></description></item></channel></rss>
