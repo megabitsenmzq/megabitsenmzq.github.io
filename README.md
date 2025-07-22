@@ -6,3 +6,10 @@
 阅读文章请访问：[megabits.xyz](https://megabits.xyz)
 
 **博客内文章版权所有，如想转载请先与我联系。此分支内容为 Hugo 源文件。**
+
+## 命令备忘
+
+```
+hugo new content posts/xxx
+hugo server
+```
