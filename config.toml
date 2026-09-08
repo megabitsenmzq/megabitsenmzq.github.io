@@ -10,7 +10,6 @@ enableInlineShortcodes = true
   description = "你好，这些东西是一条鱼的记忆。假如他忘了什么的话，记得去提醒他。"
   twitter = 'Megabits_mzq'
   github = 'megabitsenmzq'
-  instagram = 'megabits_mzq'
 
 [menu]
   [[menu.main]]
@@ -18,6 +17,12 @@ enableInlineShortcodes = true
     name = "技术文章"
     url = "/dev-posts/"
     weight = 10
+
+  [[menu.main]]
+    identifier = "cookie"
+    name = "送我曲奇"
+    url = "https://buymeacoffee.com/megabits"
+    weight = 20
 
 [taxonomies]
     tag = "tags"
